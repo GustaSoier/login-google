@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* font-family: 'Poppins', sans-serif; */
+
+
+*{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #171717;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    height: 740px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.people-img img {
+    max-width: 2000px;
+    height: 120vh;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+  
+  /* campo de login */
+.containerLogar {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0;
+    min-height: 70%;
+}
+
+.logarContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.logarContent h1 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.logarContent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.logarContent a img {
+    width: 7%;
+}
+  
+.divideOr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divideOr::after,
+.divideOr::before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+}
+  
+.form {
+    position: relative;
+}
+
+.form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form p {
+    font-size: 0.9rem;
+}
+
+.form p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.underline {
+    width: 45%;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    filter: brightness(0);
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.formInput::placeholder {
+    font-weight: bold;
+}
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.rememberForgot a {
+    font-weight: bold;
+}
+
+.rememberForgot div {
+    display: flex;
+    gap: 4px;
+    font-weight: bold;
+  }
+
+.btn {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 7px;
+}
+  
+  /* Responsivo */
+  @media (max-width: 768px){
+.people-img img {
+    display: none;
+    }
+
+.containerLogar {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.logarContent {
+    width: 70%;
+}
+.logarContent h1 {
+    font-size: 2.8rem;
+}
+
+.divideOr::after,
+.divideOr::before {
+    width: 10rem;
+}
+
+.form {
+    width: 70%;
+}
+.underline {
+    width: 25%;
+    right: 95px;
+}
+}
+
+@media (max-width: 378px){ 
+    .logarContent h1{
+    font-size: 1.4rem;
+}
+.divideOr::after,
+.divideOr::before {
+    width: 6rem;
+}
+    .underline {
+    width: 25%;
+    right: 95px;
+    bottom: 0;
+}
+
+.rememberForgot {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.underline {
+    display: none;
+}
+}
